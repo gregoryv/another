@@ -9,7 +9,7 @@ func init() {
 	http.HandleFunc("/another", GetGopher)
 }
 
-// @Success 200 {object} another.GetGopher.response
+// @Success 200 {object} another.GetGopher.gopher
 // @Router /another [get]
 func GetGopher(w http.ResponseWriter, r *http.Request) {
 	type gopher struct {
